@@ -1,11 +1,9 @@
-import java.io.*;
 import java.util.*;
 import java.util.ArrayList;
 
 public class Chatbot {
 
-    ArrayList<String> questions;
-
+    private ArrayList<String> questions;
 
     public Chatbot(){
         //initializes question list
@@ -15,27 +13,23 @@ public class Chatbot {
         questions.add("Have you done anything exciting lately?");
         questions.add("Have you been on any interesting trips lately?");
         questions.add("Are you a cat person or a dog person?");
-
     }
 
     public void randomQuestion(){
         //pick a random question from the questionlist
-        int index = new Random().nextInt(questions.size()) ;
-        String randomQuestion = questions.get(index);
-        System.out.println(randomQuestion);
-    }
-
-    public Boolean checkState(String s){
-
-        if (s.toLowerCase().contains("end the conversation")) {
-            return false;
+        if (!questions.isEmpty()) {
+            int index = new Random().nextInt(questions.size()) ;
+            System.out.println(questions.get(index));
+            questions.remove(index);
+        } else {
+            System.out.println("Oops, I ran out of questions!");
+            endConversation();
         }
-
-        return true;
     }
 
     public void endConversation() {
-        System.out.println("It's nice talking to you. Hope your study goes well!");
+        System.out.println("It was nice talking to you. Hope your study goes well!");
+        System.exit(0);
     }
     
 }
