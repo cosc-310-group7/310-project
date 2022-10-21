@@ -11,10 +11,15 @@ public class init {
         // Print hello message
         System.out.println("Hello there, I am a chatbot designed to help you learn English!\nLet's get started!");
 
+        String question;
+        String response;
+        
         while (state) {
             //ask a random question
-            bot.randomQuestion();
-            String response = sc.nextLine();
+            question = bot.randomQuestion();
+            response = sc.nextLine();
+
+            bot.answerList(response, question);
 
             //end conversation
             if (response.toLowerCase().contains("end the conversation")) {
