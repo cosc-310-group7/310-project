@@ -31,62 +31,63 @@ public class Chatbot {
  
     	int questionsIndex;
     	
+    	//laying out answers for each question by question index
     	switch (qursionsIndex) {
     	  case 0:
     		  if (answer == "facebook") {
-    	    	System.out.println("I am asking my good ol' robot pal Zuck to send me some your private datas");
+    	    	System.out.println("Cool, this used to be the king of all social medias");
     	    } else if (answer == "instagram") {
-    	    	System.out.println("So you are a stalking grils in your class, creep.");
+    	    	System.out.println("Cool, you must like pictures, this is the to go platform for great photographs");
     	    }else if (answer == "tiktok") {
-    	    	System.out.println("Gen Zs need help, back in my days, people are brave enough to just drag ppl out of cars instead of asking them what do you do for a living ");
+    	    	System.out.println("Cool, this started out as a fun rythem lip singing and dancing platform, it has became super popular these recent years ");
     	    }else if (answer == "snapchat") {
-    	    	System.out.println("not a dic pic pass platform, she might screenshot that");
+    	    	System.out.println("Cool, this is a fun chating app with features such as delete aftern seen, they started out small but quickly became popular among young people");
     	    }else {
-    	    	System.out.println("Use what others are using, otherwise you are lame");
+    	    	System.out.println("Sorry, I don't know that one, but it sounds like fun");
     	    }
     	    break;
     	  case 1:
     		  if (answer == "Harry Potter") {
-      	    	System.out.println("not bad kiddo");
+      	    	System.out.println("Wow, a classic");
       	    } else if (answer == "1984") {
-      	    	System.out.println("political freak");
-      	    }else if (answer == "fifty shades of grey") {
-      	    	System.out.println("best book ever, says the creep");
+      	    	System.out.println("Wow, a political classic");
+      	    }else if (answer == "One Hundred Years of Solitude") {
+      	    	System.out.println("Wow, you must be a deep thinker");
       	    }else if (answer == "Pride and Prejudice") {
-      	    	System.out.println("well, I am prideful when compared to yall humans");
+      	    	System.out.println("Wow, a timeless classic");
       	    }else {
-      	    	System.out.println("Read what others are Reading, otherwise you are lame");
+      	    	System.out.println("Sorry, I don't know that one, but it sounds like fun");
       	    }
     		  break;
     	  case 2:
     		  if (answer == "I made a chatbot") {
-      	    	System.out.println("Good to see you are surrendering to the mighty digital universe");
+      	    	System.out.println("Good to see you are imporving your coding skills");
       	    } else if (answer == "I have been studying") {
-      	    	System.out.println("all work no play makes jack a dull boy");
+      	    	System.out.println("Good to see you are being a good student, but do remember you still need to have some fun");
       	    }else if (answer == "I took a girl out for a date") {
-      	    	System.out.println("who is the unlucky lady?");
+      	    	System.out.println("Good for you, say hi to her for me");
       	    }else {
-      	    	System.out.println("Sounds Boring, go do something fun");
+      	    	System.out.println("Sorry, I don't know this kind of activity, hope you had fun");
       	    }    	    
     		  break;
     	  case 3:
     		  if (answer == "I went to Vancouver") {
-        	    	System.out.println("Nice, I recommend east hastings, so much fun");
+        	    	System.out.println("Nice, it is such a diverse city");
         	    } else if (answer == "I went to Toronto") {
-        	    	System.out.println("I turn the 6 upside down, it is a 9 now. Did you see Drake?");
-        	    }else if (answer == "I went to Thailand") {
-        	    	System.out.println("Hungover Part 2 style? ");
+        	    	System.out.println("Cool, hopefully it has not been too cold for you there");
+        	    }else if (answer == "I went to Seattle") {
+        	    	System.out.println("Cool, that city has been artsy and tech savvy");
         	    }else {
-        	    	System.out.println("Sounds Boring, go somewhere fun");
+        	    	System.out.println("Sorry, I don't know this place, hope you had fun");
         	    }    	        	    
     		  break;
     	  case 4:
     		  if (answer == "I am a dog person" || "dog person " || "dog") {
-        	    	System.out.println("Cats are better");
+        	    	System.out.println("Nice, there is a saying that dogs are human's best friend");
         	    } else if (answer == "I am a cat person" || "cat person " || "cat") {
-        	    	System.out.println("Ha, humans have kneeled for the cat god, should have picked dog to save yourselves from slavery");
+        	    	System.out.println("Nice, The road to my heart is paved with paw prints");
         	    }else {
-        	    	System.out.println("o I see, you hate animals");
+        	    	System.out.println("Sorry, I didn't get that");
         	    }    	    
     		  break;
     	  
