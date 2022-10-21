@@ -37,11 +37,11 @@ public class Chatbot {
     		  if (answer == "facebook") {
     	    	System.out.println("Cool, this used to be the king of all social medias");
     	    } else if (answer == "instagram") {
-    	    	System.out.println("Cool, you must like pictures, this is the to go platform for great photographs");
+    	    	System.out.println("Cool, you must like pictures, this is the go to platform for great photographs");
     	    }else if (answer == "tiktok") {
-    	    	System.out.println("Cool, this started out as a fun rythem lip singing and dancing platform, it has became super popular these recent years ");
+    	    	System.out.println("Cool, this started out as a fun rythem lip singing and dancing platform, it has been super popular these recent years ");
     	    }else if (answer == "snapchat") {
-    	    	System.out.println("Cool, this is a fun chating app with features such as delete aftern seen, they started out small but quickly became popular among young people");
+    	    	System.out.println("Cool, this is a fun chating app with features such as delete after seen, they started out small but quickly became popular among young people");
     	    }else {
     	    	System.out.println("Sorry, I don't know that one, but it sounds like fun");
     	    }
@@ -61,9 +61,9 @@ public class Chatbot {
     		  break;
     	  case 2:
     		  if (answer == "I made a chatbot") {
-      	    	System.out.println("Good to see you are imporving your coding skills");
+      	    	System.out.println("Good to see you made a coding project");
       	    } else if (answer == "I have been studying") {
-      	    	System.out.println("Good to see you are being a good student, but do remember you still need to have some fun");
+      	    	System.out.println("Good to see you are being a good student, but do remember that you still need to have some fun");
       	    }else if (answer == "I took a girl out for a date") {
       	    	System.out.println("Good for you, say hi to her for me");
       	    }else {
