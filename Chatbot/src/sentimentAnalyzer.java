@@ -1,4 +1,5 @@
 import java.util.Properties;
+
 import edu.stanford.nlp.sentiment.SentimentCoreAnnotations;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.ling.CoreAnnotations;
