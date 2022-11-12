@@ -24,8 +24,9 @@ public class init {
             //end conversation
             if (response.toLowerCase().contains("end the conversation")) {
                 state = false;
-                sc.close();
                 bot.endConversation();
+
+                sc.close();
             }
         }
     }

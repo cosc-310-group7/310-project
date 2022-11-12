@@ -95,7 +95,11 @@ public class Chatbot {
 
     public void endConversation() {
         System.out.println("It was nice talking to you. Hope your study goes well!");
+		askForFeedBack();
         System.exit(0);
     }
     
+	public void askForFeedBack(){
+		
+	}
 }
