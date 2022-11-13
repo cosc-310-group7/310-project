@@ -94,12 +94,23 @@ public class Chatbot {
     }
 
     public void endConversation() {
-        System.out.println("It was nice talking to you. Hope your study goes well!");
 		askForFeedBack();
+		System.out.println("It was nice talking to you. Hope your study goes well!");
         System.exit(0);
     }
     
 	public void askForFeedBack(){
-		
+		System.out.println("Please describe your experience!");
+		Scanner in  = new Scanner(System.in);
+		String ans = in.nextLine();
+		sentimentAnalyzer SA = new sentimentAnalyzer();
+		int sentScore = SA.getSentimentInt(ans);
+		if(sentScore <= 1){
+			System.out.println("I'm sorry to hear that! your feedbacks will be provided to the developers to further improve my performances.");
+		}
+		else{
+			System.out.println("I'm glad to hear that! Hope I'm able to better assist you in the future!");
+		}
+		in.close();
 	}
 }
