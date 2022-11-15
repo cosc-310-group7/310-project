@@ -6,6 +6,7 @@ public class init {
         // Initializing a new chatbot
         Scanner sc = new Scanner(System.in);
         Chatbot bot = new Chatbot();
+        POSTagger tagger = new POSTagger();
         boolean state = true;
 
         // Print hello message
@@ -17,7 +18,8 @@ public class init {
         while (state) {
             //ask a random question
             question = bot.randomQuestion();
-            response = sc.nextLine();
+            response = tagger.tag(sc.nextLine());
+            System.out.println(response);
 
             bot.answerList(response, question);
 

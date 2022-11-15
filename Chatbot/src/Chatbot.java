@@ -71,20 +71,20 @@ public class Chatbot {
       	    }    	    
     		  break;
     	  case "Have you been on any interesting trips lately?":
-    		  if (answer.toLowerCase().equals("i went to vancouver")) {
+    		  if (answer.toLowerCase().equals("vancouver")) {
         	    	System.out.println("Nice, it is such a diverse city");
-        	    } else if (answer.toLowerCase().equals("i went to toronto")) {
+        	    } else if (answer.toLowerCase().equals("toronto")) {
         	    	System.out.println("Cool, hopefully it has not been too cold for you there");
-        	    }else if (answer.toLowerCase().equals("i went to seattle")) {
+        	    }else if (answer.toLowerCase().equals("seattle")) {
         	    	System.out.println("Cool, that city has been artsy and tech savvy");
         	    }else {
         	    	System.out.println("Sorry, I don't know this place, hope you had fun");
         	    }    	        	    
     		  break;
     	  case "Are you a cat person or a dog person?":
-    		  if (answer.toLowerCase().equals("i am a dog person") || answer.toLowerCase().equals("dog person") || answer.toLowerCase().equals("dog")) {
+    		  if (answer.toLowerCase().equals("dog")) {
         	    	System.out.println("Nice, there is a saying that dogs are human's best friend");
-        	    } else if (answer.toLowerCase().equals("i am a cat person") || answer.toLowerCase().equals("cat person") || answer.toLowerCase().equals("cat")) {
+        	    } else if (answer.toLowerCase().equals("cat")) {
         	    	System.out.println("Nice, The road to my heart is paved with paw prints");
         	    }else {
         	    	System.out.println("Sorry, I didn't get that");
