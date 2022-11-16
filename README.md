@@ -16,5 +16,7 @@ answerList(): this method takes every question and provides a set of valid answe
 endConversation(): Closes the session and prints a goodbye message
 
 POSTagger Methods: 
+
 POSTagger(): Initializes pipeline to CoreNLP
+
 tag(): takes a string and returns the nouns in the string
