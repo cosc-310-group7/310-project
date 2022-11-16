@@ -1,5 +1,5 @@
 # 310-project
-This system is meant as a chatbo that helps people learn english, it will ask the users questions and expects the users to understand and answer the questions.
+This system is meant as a chatbot that helps people learn english, it will ask the users questions and expects the users to understand and answer the questions.
 
 Our chatbot code contains two folders Chatbot, init:
 Chatbot: contains all the methods used to ask and check the answers from the user
