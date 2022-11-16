@@ -1,5 +1,5 @@
 # 310-project
-This system is meant as a chatbo that helps people learn english, it will ask the users questions and expects the users to understand and answer the questions.
+This system is meant as a chatbot that helps people learn english, it will ask the users questions and expects the users to understand and answer the questions.
 
 Our chatbot code contains two folders Chatbot, init:
 Chatbot: contains all the methods used to ask and check the answers from the user
@@ -14,3 +14,9 @@ randomQuestion(): this method returns an unasked question to the users and if al
 answerList(): this method takes every question and provides a set of valid answers to the question, and if the answer is not in the set of answers it tells the user the it doesn't know.
 
 endConversation(): Closes the session and prints a goodbye message
+
+POSTagger Methods: 
+
+POSTagger(): Initializes pipeline to CoreNLP
+
+tag(): takes a string and returns the nouns in the string
