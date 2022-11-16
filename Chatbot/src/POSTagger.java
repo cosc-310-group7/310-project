@@ -9,15 +9,18 @@ import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
+import opennlp.tools.stemmer.PorterStemmer;
 
 public class POSTagger {
     
     StanfordCoreNLP pipeline;
+    PorterStemmer stemmer;
 
     public POSTagger() {
         Properties props = new Properties();
         props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
         pipeline = new StanfordCoreNLP(props);
+        stemmer = new PorterStemmer();
     }
 
     public String tag(String s) {
@@ -39,7 +42,7 @@ public class POSTagger {
                 String ne = token.get(NamedEntityTagAnnotation.class);
                 System.out.println(String.format("Print: word: [%s] pos: [%s] ne: [%s]", word, pos, ne));
                 if (pos.equals("NN") || pos.equals("NNS") || pos.equals("NNP") || pos.equals("NNPS")) {
-                    nounsList.add(word);
+                    nounsList.add(stemmer.stem(word));
                 }
             }
         }
